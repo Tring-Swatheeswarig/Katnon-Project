@@ -1,0 +1,349 @@
+@media (max-width: 991.98px) {
+    .navbar-expand-lg .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-collapse {
+        display: none !important; 
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #f8f9fa;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .navbar-collapse.show {
+        display: block !important;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar-nav.me-auto {
+        margin-right: 0 !important;
+        margin-bottom: 1rem;
+    }
+
+    .navbar-nav .nav-item {
+        margin-left: 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.75rem 1rem;
+    }
+
+    .navbar-nav:last-child {
+        margin-left: 0 !important;
+    }
+
+    .navbar-nav:last-child .nav-item {
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .dropdown-menu {
+        position: static;
+        border: none;
+        box-shadow: none;
+        padding-left: 1rem;
+    }
+
+    .ms-2 {
+        margin-left: 0 !important;
+    }
+
+    .mt-5 {
+        margin-top: 1rem !important; 
+    }
+
+    .pt-4 {
+        padding-top: 0 !important; 
+    }
+
+    .row {
+        flex-direction: column; 
+    }
+
+    .col-md-8 {
+        width: 100%;
+    }
+
+    .offset-md-1 {
+        margin-left: 0;
+    }
+
+    .display-4 {
+        font-size: 2rem !important;
+    }
+}
+
+/* 360classroom media query */
+
+
+/* Media query for small screens (phones - below 768px) */
+@media (max-width: 767.98px) {
+    .container.py-5 {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+
+    .row.row-cols-1 > .col {
+        width: 100%;
+    }
+}
+
+/* Media query for medium screens (tablets - 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .row.row-cols-md-3 > .col {
+        width: calc(100% / 2); /* Display 2 columns on medium screens */
+        flex: 0 0 auto;
+    }
+}
+
+/* Media query for large screens (desktops - 992px and up) */
+@media (min-width: 992px) {
+    .row.row-cols-md-3 > .col {
+        width: calc(100% / 3);
+        flex: 0 0 auto;
+    }
+}
+
+/* Katon 360 classroom school application */
+
+
+
+.navbar-nav .nav-link.active {
+    color: black !important;
+}
+@media (max-width: 992px) {
+    .offset-md-1 {
+        margin-left: 0 !important;
+    }
+    .col-md-8 {
+        width: 100% !important;
+    }
+    .container.mt-5.pt-4 .row .col-md-8 {
+        margin-top: 60px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .container.mt-5.pt-4 .row .col-md-8,
+    .container.mt-5.pt-4 .row .col-md-8 > div {
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        height: auto !important;
+        display: block !important;
+        text-align: center;
+    }
+    .container.mt-5.pt-4 .row .col-md-8 h1 {
+        font-size: 2rem !important;
+    }
+    .container.mt-5.pt-4 .row .col-md-8 p {
+        font-size: 0.9rem !important;
+    }
+}
+@media (max-width: 768px) {
+    .row-cols-md-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .katon-hero {
+        padding: 30px 0;
+    }
+    .katon-hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .katon-hero-text {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+    .katon-hero-image {
+        max-width: 100%;
+    }
+    .katon-hero-buttons {
+        text-align: center;
+    }
+    .katon-hero-buttons .button {
+        display: block;
+        width: 200px;
+        margin: 10px auto;
+    }
+}
+@media (max-width: 576px) {
+    .row-cols-md-3 {
+        grid-template-columns: 1fr;
+    }
+}
+.katon-hero {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+.katon-hero-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.katon-hero-text {
+    flex: 1;
+    padding-right: 20px;
+}
+.katon-hero-image {
+    flex: 1;
+    text-align: center;
+}
+.katon-hero-image img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.katon-hero-buttons {
+    margin-top: 20px;
+}
+.katon-hero-buttons .button {
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 1em;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+.katon-hero-buttons .student-button {
+    background-color: #192a56;
+}
+.katon-hero-buttons .classroom-button {
+    background-color: #00aaff;
+}
+
+.live-class-section {
+    padding: 60px 0;
+    background-color: #0a192f; 
+    color: #ccd6f6;
+}
+
+.live-class-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.live-class-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.live-class-image {
+    flex: 1;
+    text-align: center;
+}
+
+.live-class-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.live-class-buttons a {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #ccd6f6;
+    border: 1px solid #64ffda;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.live-class-buttons a:hover {
+    background-color: rgba(100, 255, 218, 0.1);
+}
+
+@media (max-width: 768px) {
+    .live-class-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .live-class-text {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    .live-class-buttons {
+        text-align: center;
+    }
+    .live-class-buttons a {
+        display: block;
+        width: 200px;
+        margin: 10px auto;
+    }
+}
+ /* library */
+ /* Styles for smaller screens  */
+@media (max-width: 768px) {
+    section {
+      padding: 30px 15px;
+    }
+  
+    .container { 
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+    .text-column { 
+      padding-right: 0; 
+      text-align: center; 
+      margin-bottom: 30px;
+    }
+  
+    .text-column h2 {
+      font-size: 2em; 
+    }
+  
+    .image-column { 
+      text-align: center; 
+    }
+  
+    .app-badges img {
+      max-width: 80%;
+      height: auto;
+      margin: 5px; 
+    }
+  
+    .library-image img {
+      max-width: 80%; 
+      height: auto;
+    }
+  }
+  
+  /* Styles for even smaller screens  */
+  @media (max-width: 576px) {
+    section {
+      padding: 20px 10px; 
+    }
+  
+    .text-column h2 {
+      font-size: 1.75em;
+    }
+  
+    .app-badges img {
+      max-width: 95%;
+    }
+  
+    .library-image img {
+      max-width: 95%; 
+    }
+  }
