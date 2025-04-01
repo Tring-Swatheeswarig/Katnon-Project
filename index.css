@@ -347,3 +347,55 @@
       max-width: 95%; 
     }
   }
+
+  /* Transforming */
+
+
+  /* For small screens (up to 767px) */
+@media (max-width: 767px) {
+    .text-center-text-md-start {
+        text-align: center !important;
+    }
+
+    .display-6 {
+        font-size: 1.75rem !important;
+    }
+
+    .lead {
+        font-size: 0.9rem !important; 
+    }
+
+    .fst-italic {
+        font-size: 0.8rem !important; 
+    }
+
+    .btn-sm {
+        font-size: 0.875rem !important;
+        padding: 0.25rem 0.5rem !important; 
+    }
+
+    .col-md-6:first-child {
+        margin-bottom: 30px; 
+    }
+}
+
+/* For medium screens (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .display-6 {
+        font-size: 1.8rem; 
+    }
+
+    .lead {
+        font-size: 0.95rem; 
+    }
+}
+
+@media (min-width: 992px) {
+    .display-6 {
+        font-size: 2rem; 
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+}
